@@ -1,3 +1,7 @@
+<?php
+//error_reporting(E_ALL);
+//ini_set('display_errors',1);
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -7,7 +11,16 @@
 <link rel="stylesheet" type="text/css" href="style/orange.css">
 <link rel="stylesheet" type="text/css" href="style/style1.css">
 </head>
+
 <body>
+<?php 
+//load fail with function
+include('model/model_function.php');
+
+
+ ?>
+
+
 <div id="main">
   <div id="links">
   <!--            -->
@@ -16,14 +29,12 @@
     <h1>School page</h1>
   </div>
   <div id="menu">
-    <ul>
-      <!-- **** INSERT NAVIGATION ITEMS HERE (use id="selected" to identify the page you're on **** -->
-      <li><a href="#">home</a></li>
-      <li><a href="#">page 1</a></li>
-      <li><a href="#">page 2</a></li>
-      <li><a href="#">page 3</a></li>
-      <li><a href="#">contact</a></li>
-    </ul>
+    <?php
+          $sql = "SELECT * FROM `menyy` ORDER BY `menyy`.`order_menyy` ASC";
+          $rows= get_rows($sql);
+          //execute query
+          include('model/navigation.php');
+      ?>
   </div>
   
   
@@ -69,43 +80,9 @@
 	
 	
 	 <!-- **** INSERT PAGE CONTENT HERE **** -->
-    <div id="column2">
-      <h1>introduction</h1>     
-		<p> 
-			This standards compliant website template is released as an 'open source' Design
-			(under the Creative Commons
-			Attribution 2.5 licence), which means that you are free to download and use it
-			for anything you want (including modifying and amending it). The logo image
-			is from a digital photograph taken by me, so there are no issues with copyright
-			there. All I ask is that you leave the 'Design by dcarter' link in the footer of
-			the template, but other than that... 
-		</p>
-            
-	</div>
-	
-   <div id="column3">
-      <h1>List</h1>
-	<div style="width:912px;">	
-	
-		<div style="width:150px; float:left;">
-		<span class="left"><img src="style/graphic.jpg" alt="" width="130px" height="120px"></span>
-		<p><a href="#">TEXT link</a> </p>
-		</div>
-
-			
-    </div> 	
-	</div>
-	
-	
-    <div id="column2">   
-      <h1>Images images can be placed on the left or on the right.</h1>
-      <h2>Variant 1</h2>
-      <span class="left"><img src="style/graphic.jpg" alt="" width="148px" height="168px"></span>
-      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        
-	  </p>
- 	</div>   
+    <?php 
+        include('model/parseling.php');
+     ?>
 	
 
 	<!-- **** END PAGE CONTENT  **** -->
