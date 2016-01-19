@@ -1,0 +1,24 @@
+﻿trybs_pills_vertical_row
+
+http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_pills_vertical_row&stacked=h
+
+
+trybs_navbar_inverse
+
+http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_inverse&stacked=h
+
+
+modal windows
+
+http://www.bootply.com/nlvvch/qQFiYsbc99
+
+
+
+
+bootstrap по русски
+
+http://bootstrap-3.ru/bootstraptheme.php
+http://mybootstrap.ru/
+
+
+http://www.w3schools.com/bootstrap/

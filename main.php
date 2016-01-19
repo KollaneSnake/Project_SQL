@@ -44,35 +44,9 @@ include('model/model_function.php');
   <div id="content">
     <div id="column1">
 
+    <?php include ('content/right_menyy.php');?>
 	
-	
-      <div class="sidebaritem">
-        <div class="sbihead">
-          <h1>additional links</h1>
-        </div>
-        <div class="sbilinks">
-          <!-- **** INSERT ADDITIONAL LINKS HERE **** -->
-          <ul>
-            <li><a href="#">punkt1</a></li>
-            <li><a href="#">punkt2</a></li>
-            <li><a href="#">punkt3</a></li>
-            <li><a href="">punkt4</a></li>
-          </ul>
-        </div>
-      </div>
-	  
-	  
-	  <!-- **** INSERT OTHER INFORMATION HERE **** --> 
-      <div class="sidebaritem">
-        <div class="sbihead">
-          <h1>other information</h1>
-        </div>
-        <div class="sbicontent">
-         
-          <p> TTTTT </p>
-        </div>
-      </div>
-	   <!-- **** END OTHER INFORMATION  **** -->
+      
 	  
     </div>
 	
