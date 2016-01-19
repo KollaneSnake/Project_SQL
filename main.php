@@ -24,6 +24,7 @@ include('model/model_function.php');
 <div id="main">
   <div id="links">
   <!--            -->
+  <a href="admin/signin.php">Admin Login</a>
 	</div>
   <div id="logo">
     <h1>School page</h1>
